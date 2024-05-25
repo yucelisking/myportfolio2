@@ -108,11 +108,9 @@ button {
   text-transform: uppercase;
   color: var(--text1);
   text-decoration: none;
-  background-image: linear-gradient(
-    to right,
-    var(--accent) 75%,
-    var(--accent) 75%
-  );
+  background-image: linear-gradient(to right,
+      var(--accent) 75%,
+      var(--accent) 75%);
   background-position: 0 2.1em;
   background-repeat: repeat-x;
   background-size: 8px 2px;
@@ -180,11 +178,11 @@ svg {
   flex: 1 0 100%;
 }
 
-.header__social > svg > path {
+.header__social>svg>path {
   transition: fill var(--transition);
 }
 
-.header__social:hover > svg > path {
+.header__social:hover>svg>path {
   fill: var(--accent);
 }
 
@@ -243,16 +241,14 @@ svg {
   margin-block-end: 24px;
 }
 
-.hero__headline > br {
+.hero__headline>br {
   display: none;
 }
 
-h1 > span {
-  background-image: linear-gradient(
-    to right,
-    var(--accent) 75%,
-    var(--accent) 75%
-  );
+h1>span {
+  background-image: linear-gradient(to right,
+      var(--accent) 75%,
+      var(--accent) 75%);
   background-position: 0 1.18em;
   background-repeat: repeat-x;
   background-size: 8px 4px;
@@ -284,7 +280,6 @@ h1 > span {
   .hero__image {
     position: relative;
     width: 42vw;
-    max-width: fit-content;
     /* width: 322px; */
     height: auto;
     left: auto;
@@ -305,7 +300,7 @@ h1 > span {
     margin-block-end: 60px;
   }
 
-  .hero__headline > br {
+  .hero__headline>br {
     display: inline-block;
   }
 
@@ -357,7 +352,7 @@ h1 > span {
     margin-block-end: 43px;
   }
 
-  .hero__headline > br {
+  .hero__headline>br {
     display: none;
   }
 
@@ -569,6 +564,7 @@ h1 > span {
   .projects__item:hover .projects__links {
     opacity: 1;
   }
+
   .projects__item:focus-within .projects__links {
     opacity: 1;
   }
@@ -592,7 +588,7 @@ h1 > span {
     transition: opacity 400ms ease-in-out;
   }
 
-  .projects__links:hover ~ .projects__picture::after {
+  .projects__links:hover~.projects__picture::after {
     opacity: 0.5;
   }
 
@@ -633,7 +629,7 @@ h1 > span {
   color: var(--text1);
 }
 
-.contact__control > *::placeholder {
+.contact__control>*::placeholder {
   color: var(--text1);
   opacity: 0.5;
   text-transform: uppercase;
@@ -663,12 +659,12 @@ h1 > span {
   translate: -50% -50%;
 }
 
-.contact input:focus-visible:invalid ~ .contact__invalid-icon,
-.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
+.contact input:focus-visible:invalid~.contact__invalid-icon,
+.contact textarea:focus-visible:invalid~.contact__invalid-icon {
   display: inline-block;
 }
 
-.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
+.contact textarea:focus-visible:invalid~.contact__invalid-icon {
   top: 1.2rem;
   right: 1.5rem;
   translate: none;
